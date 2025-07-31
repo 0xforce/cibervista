@@ -45,7 +45,7 @@ const Header: React.FC = () => {
                             </li>
                         ))}
                         <li>
-                            <button onClick={() => handleScroll('#contact')} className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
+                            <button onClick={() => handleScroll('contact')} className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
                                 Contact
                             </button>
                         </li>
@@ -91,7 +91,7 @@ const Header: React.FC = () => {
                             </li>
                         ))}
                         <li>
-                            <button onClick={() => { handleScroll('#contact'); toggleMenu(); }} className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit">
+                            <button onClick={() => { handleScroll('contact'); toggleMenu(); }} className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit">
                                 Get Started
                             </button>
                         </li>
