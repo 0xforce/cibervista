@@ -8,7 +8,7 @@ const Pricing: React.FC = () => {
             <div className="text-center space-y-4">
                 <h2 className="text-4xl font-bold text-gray-900">Lead Generation Packages</h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Get qualified insurance leads that convert. Our custom packages are designed to scale with your agency's growth and target your specific market segments.
+                    Get qualified insurance leads that convert. Our custom packages are designed to scale with your agency&apos;s growth and target your specific market segments.
                 </p>
             </div>
             
