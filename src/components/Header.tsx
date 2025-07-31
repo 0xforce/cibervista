@@ -4,10 +4,9 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
-import { FaFingerprint } from 'react-icons/fa';
+import Image from 'next/image';
 
 import Container from './Container';
-import { siteDetails } from '@/data/siteDetails';
 import { menuItems } from '@/data/menuItems';
 
 const Header: React.FC = () => {
@@ -17,31 +16,38 @@ const Header: React.FC = () => {
         setIsOpen(!isOpen);
     };
 
+    const handleScroll = (href: string) => {
+        const contactSection = document.getElementById(href);
+            if (contactSection) {
+            contactSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+
     return (
         <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
             <Container className="!px-0">
                 <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
-                        <FaFingerprint className="text-foreground min-w-fit w-7 h-7" />
-                        <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
-                            {siteDetails.siteName}
-                        </span>
+                        <Image src="/images/logo.png" alt="logo" width={500} height={100} className='w-full h-auto' />
                     </Link>
 
                     {/* Desktop Menu */}
-                    <ul className="hidden md:flex space-x-6">
+                    <ul className="hidden md:flex space-x-6 items-center">
                         {menuItems.map(item => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-foreground hover:text-foreground-accent transition-colors">
+                                <button onClick={() => handleScroll(item.url)} className="text-foreground hover:text-foreground-accent transition-colors">
                                     {item.text}
-                                </Link>
+                                </button>
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
-                                Download
-                            </Link>
+                            <button onClick={() => handleScroll('#contact')} className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
+                                Contact
+                            </button>
                         </li>
                     </ul>
 
@@ -79,15 +85,15 @@ const Header: React.FC = () => {
                     <ul className="flex flex-col space-y-4 pt-1 pb-6 px-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-foreground hover:text-primary block" onClick={toggleMenu}>
+                                <button onClick={() => { handleScroll(item.url); toggleMenu(); }} className="text-foreground hover:text-primary block">
                                     {item.text}
-                                </Link>
+                                </button>
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
+                            <button onClick={() => { handleScroll('#contact'); toggleMenu(); }} className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit">
                                 Get Started
-                            </Link>
+                            </button>
                         </li>
                     </ul>
                 </div>

@@ -1,3 +1,5 @@
+"use client"
+
 import clsx from "clsx";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 
@@ -11,6 +13,16 @@ interface Props {
 const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
     const { name, price, features } = tier;
 
+    const handleContactClick = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+
     return (
         <div className={clsx("w-full max-w-sm mx-auto bg-white rounded-xl border border-gray-200 lg:max-w-full", { "shadow-lg": highlight })}>
             <div className="p-6 border-b border-gray-200 rounded-t-xl">
@@ -21,8 +33,11 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                     </span>
                     {typeof price === 'number' && <span className="text-lg font-normal text-gray-600">/mo</span>}
                 </p>
-                <button className={clsx("w-full py-3 px-4 rounded-full transition-colors", { "bg-primary hover:bg-primary-accent": highlight, "bg-hero-background hover:bg-gray-200": !highlight })}>
-                    Get Started
+                <button 
+                    onClick={handleContactClick}
+                    className={clsx("w-full py-3 px-4 rounded-full transition-colors", { "bg-primary hover:bg-primary-accent": highlight, "bg-hero-background hover:bg-gray-200": !highlight })}
+                >
+                    Get Custom Quote
                 </button>
             </div>
             <div className="p-6 mt-1">

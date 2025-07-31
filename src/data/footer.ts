@@ -7,31 +7,24 @@ export const footerDetails: {
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "Empowering businesses with cutting-edge financial technology solutions.",
+    subheading: "Empowering businesses with cutting-edge insurance lead generation solutions.",
     quickLinks: [
         {
             text: "Features",
-            url: "#features"
+            url: "features"
         },
         {
             text: "Pricing",
-            url: "#pricing"
+            url: "pricing"
         },
         {
             text: "Testimonials",
-            url: "#testimonials"
+            url: "testimonials"
         }
     ],
-    email: 'address@yoursite.com',
-    telephone: '+1 (123) 456-7890',
+    email: 'cibervistamiami@gmail.com',
+    telephone: '+1 (954) 200-0000',
     socials: {
-        // github: 'https://github.com',
-        // x: 'https://twitter.com/x',
-        twitter: 'https://twitter.com/Twitter',
-        facebook: 'https://facebook.com',
-        // youtube: 'https://youtube.com',
-        linkedin: 'https://www.linkedin.com',
-        // threads: 'https://www.threads.net',
-        instagram: 'https://www.instagram.com',
+        
     }
 }

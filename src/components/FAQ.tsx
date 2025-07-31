@@ -7,7 +7,7 @@ import { faqs } from "@/data/faq";
 
 const FAQ: React.FC = () => {
     return (
-        <section id="faq" className="py-10 lg:py-20">
+        <section id="faq" className="py-10 lg:py-20 mt-48">
             <div className="flex flex-col lg:flex-row gap-10">
                 <div className="">
                     <p className="hidden lg:block text-foreground-accent">FAQ&apos;S</p>
@@ -17,7 +17,7 @@ const FAQ: React.FC = () => {
                     <p className="lg:mt-10 text-foreground-accent text-center lg:text-left">
                         Ask us anything!
                     </p>
-                    <a href="mailto:" className="mt-3 block text-xl lg:text-4xl text-secondary font-semibold hover:underline text-center lg:text-left">help@finwise.com</a>
+                    <a href="mailto:cibervistamiami@gmail.com" className="mt-3 block text-lg lg:text-2xl text-secondary font-semibold hover:underline text-center lg:text-left">cibervistamiami@gmail.com</a>
                 </div>
 
                 <div className="w-full lg:max-w-2xl mx-auto border-b">

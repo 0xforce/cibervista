@@ -1,5 +1,5 @@
 export const heroDetails = {
-    heading: 'Smart, Secure, Simple Financial Management',
-    subheading: 'From effortless budgeting to real-time investment insights, Finwise puts you in control of your money like never before',
-    centerImageSrc: '/images/hero-mockup.webp',
+    heading: 'Pre-Qualified Leads for Insurance Pros',
+    subheading: 'Sell more policies with leads looking for life, health, auto, or commercial coverage. Cibervista powers your growth with real people and real interest.',
+    centerImageSrc: '/images/hero.png',
 }

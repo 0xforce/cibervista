@@ -4,7 +4,7 @@ import { testimonials } from '@/data/testimonials';
 
 const Testimonials: React.FC = () => {
     return (
-        <div className="grid gap-14 max-w-lg w-full mx-auto lg:gap-8 lg:grid-cols-3 lg:max-w-full">
+        <div id="testimonials" className="grid gap-14 max-w-lg w-full mx-auto lg:gap-8 lg:grid-cols-3 lg:max-w-full">
             {testimonials.map((testimonial, index) => (
                 <div
                     key={index}

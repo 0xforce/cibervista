@@ -1,72 +1,94 @@
-import { FiBarChart2, FiBriefcase, FiDollarSign, FiLock, FiPieChart, FiShield, FiTarget, FiTrendingUp, FiUser } from "react-icons/fi";
+import { FiPhone, FiFileText, FiShield, FiFilter, FiMessageSquare, FiRefreshCw, FiDatabase, FiMapPin, FiTarget } from "react-icons/fi";
 
 import { IBenefit } from "@/types"
 
 export const benefits: IBenefit[] = [
     {
-        title: "Smart Budgeting",
-        description: "Take the guesswork out of managing your money. Our AI-powered budgeting tool adapts to your lifestyle and helps you stay on track.",
+        title: "Warm Transfer Leads",
+        description: "Connect with prospects at the perfect moment. Our warm transfer system puts you in direct contact with interested leads when they're most likely to convert.",
         bullets: [
             {
-                title: "Intelligent Categorization",
-                description: "Automatically sorts your transactions for crystal-clear insights.",
-                icon: <FiBarChart2 size={26} />
+                title: "Real-Time Transfers",
+                description: "Speak to prospects immediately when they show interest.",
+                icon: <FiPhone size={26} />
             },
             {
-                title: "Customizable Goals",
-                description: "Set and track financial objectives that matter to you.",
+                title: "Pre-Qualified Prospects",
+                description: "Every lead is screened and ready for your pitch.",
                 icon: <FiTarget size={26} />
             },
             {
-                title: "Predictive Analysis",
-                description: "Get ahead of your finances with spending forecasts and alerts.",
-                icon: <FiTrendingUp size={26} />
+                title: "Instant Connection",
+                description: "No waiting - direct connection when prospects are engaged.",
+                icon: <FiMessageSquare size={26} />
             }
         ],
-        imageSrc: "/images/mockup-1.webp"
+        imageSrc: "/images/benefits1.png"
     },
     {
-        title: "Seamless Investing",
-        description: "Start building wealth today, no financial degree required. Finwise makes investing accessible and straightforward.",
+        title: "Coverage-Specific Targeting",
+        description: "Target the exact insurance products your agency specializes in. From life and health to auto and business insurance, we deliver leads interested in your specific offerings.",
         bullets: [
             {
-                title: "Micro-Investing",
-                description: "Begin with as little as $1 and watch your money grow.",
-                icon: <FiDollarSign size={26} />
+                title: "Life Insurance Leads",
+                description: "Qualified prospects seeking life coverage solutions.",
+                icon: <FiFileText size={26} />
             },
             {
-                title: "Expert Portfolios",
-                description: "Choose from investment strategies tailored to your risk tolerance.",
-                icon: <FiBriefcase size={26} />
+                title: "Health & Auto Coverage",
+                description: "Targeted leads for health and automotive insurance needs.",
+                icon: <FiTarget size={26} />
             },
             {
-                title: "Real-Time Performance",
-                description: "Track your investments with easy-to-understand metrics and visuals.",
-                icon: <FiPieChart size={26} />
+                title: "Business Insurance",
+                description: "Commercial clients looking for comprehensive business coverage.",
+                icon: <FiFileText size={26} />
             }
         ],
-        imageSrc: "/images/mockup-2.webp"
+        imageSrc: "/images/benefits2.png"
     },
     {
-        title: "Bank-Grade Security",
-        description: "Your financial data deserves the best protection. Rest easy knowing Finwise employs cutting-edge security measures.",
+        title: "Advanced Lead Filtering",
+        description: "Get exactly the leads you want with our sophisticated demographic and behavioral filtering system. Target by age, income, family status, and business size.",
         bullets: [
             {
-                title: "Military-Grade Encryption",
-                description: "Your information is safeguarded with the highest level of encryption.",
-                icon: <FiLock size={26} />
+                title: "Demographic Filters",
+                description: "Filter by age, income, family status, and location.",
+                icon: <FiFilter size={26} />
             },
             {
-                title: "Biometric Authentication",
-                description: "Access your account securely with fingerprint or facial recognition.",
-                icon: <FiUser size={26} />
+                title: "Business Size Targeting",
+                description: "Target specific business sizes and industries.",
+                icon: <FiTarget size={26} />
             },
             {
-                title: "Real-Time Fraud Detection",
-                description: "Our system constantly monitors for suspicious activity to keep your money safe.",
+                title: "Behavioral Insights",
+                description: "Data-driven targeting based on online behavior.",
+                icon: <FiFilter size={26} />
+            }
+        ],
+        imageSrc: "/images/benefits3.png"
+    },
+    {
+        title: "100% Satisfaction Guarantee",
+        description: "We stand behind our leads. If a lead doesn't meet our quality standards, we'll replace it at no cost. Your success is our priority.",
+        bullets: [
+            {
+                title: "Lead Replacements",
+                description: "100% satisfaction guarantee with free replacements.",
+                icon: <FiRefreshCw size={26} />
+            },
+            {
+                title: "Quality Assurance",
+                description: "Every lead verified before delivery.",
                 icon: <FiShield size={26} />
+            },
+            {
+                title: "Dedicated Support",
+                description: "24/7 support to ensure your success.",
+                icon: <FiMessageSquare size={26} />
             }
         ],
-        imageSrc: "/images/mockup-1.webp"
+        imageSrc: "/images/benefits4.png"
     },
 ]
