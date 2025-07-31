@@ -1,5 +1,3 @@
-import { BsBarChartFill, BsFillStarFill } from "react-icons/bs";
-import { PiGlobeFill } from "react-icons/pi";
 import { HiUserGroup, HiLightningBolt, HiShieldCheck } from "react-icons/hi";
 
 import { IStats } from "@/types";

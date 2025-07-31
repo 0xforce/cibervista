@@ -1,4 +1,4 @@
-import { FiPhone, FiFileText, FiShield, FiFilter, FiMessageSquare, FiRefreshCw, FiDatabase, FiMapPin, FiTarget } from "react-icons/fi";
+import { FiPhone, FiFileText, FiShield, FiFilter, FiMessageSquare, FiRefreshCw, FiTarget } from "react-icons/fi";
 
 import { IBenefit } from "@/types"
 
