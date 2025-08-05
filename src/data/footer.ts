@@ -23,7 +23,7 @@ export const footerDetails: {
         }
     ],
     email: 'cibervistamiami@gmail.com',
-    telephone: '+1 (954) 200-0000',
+    telephone: '+1 (954) 214-5213',
     socials: {
         
     }
